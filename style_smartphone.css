@@ -1,0 +1,29 @@
+html,
+body,
+#outerContainer,
+#innerContainer
+{
+	width: 1000px; /* okkio che questa c'è anche in header.php */
+}
+
+
+#liveBusyIcon
+{
+	background-image:url('imgs/wait_icon.gif');
+}
+
+/* sta roba funziona ma ora non mi serve
+@media only screen and (orientation: landscape) {
+	body 
+	{ 
+		min-height:448px;
+	}
+}
+
+@media only screen and (orientation: portrait) {
+	body 
+	{ 
+		min-height:1413px;
+	}
+}
+*/

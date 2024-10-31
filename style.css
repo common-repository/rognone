@@ -1,0 +1,742 @@
+h1, h2, h3, h4, h5, h6, a, .formSendButton
+{
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+
+html, body, input, p
+{
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+html
+{
+	background-image: none;
+	background-color: white;
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 100%;
+	height: 100%;
+	color:#666666;
+	text-shadow: rgba(255,255,255, 0.8) 0px 1px 0px;
+	overflow: hidden;
+}
+
+body
+{
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 100%;
+	height: 100%;
+	font-size: 13px;
+	overflow: hidden;
+}
+
+
+a
+{
+	background-color: transparent;
+	display: block;
+	font-weight: bold;
+	color:#000000;
+	text-decoration:none;
+	padding: 2px 6px;
+	margin: 1px;
+	text-shadow: rgba(255, 255, 255, 0.9) 1px 1px 0px;
+	
+}
+
+a:hover, 
+#livePopup:hover
+{
+	color: #666;
+	text-shadow: rgba(255,255,255, 0.8) 0px 1px 0px;
+	background-color: transparent;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+h1 
+{
+	font-size:45px;
+	line-height:120%;
+	letter-spacing: -3px;
+}
+
+h2 
+{
+	font-size:40px;
+	line-height:120%;
+	letter-spacing: -2px;
+}
+
+h3 
+{
+	font-size: 35px;
+	line-height:120%;
+	letter-spacing: -1px;
+}
+
+h4
+{
+	font-size: 22px;
+	line-height:120%;
+	letter-spacing: 0px;
+}
+
+h5 
+{
+	font-size: 15px;
+	line-height:120%;
+	letter-spacing: 0px;
+}
+
+h6 
+{
+	font-size: 10px;
+	line-height:120%;
+	letter-spacing: 0px;
+}
+
+img
+{
+	border:0;
+}
+
+p,
+ul,
+li
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+hr
+{
+	margin: 0;
+}
+
+
+#outerContainer,
+#outerContainer p,
+#outerContainerObscurator
+{
+	border: 0px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#outerContainerObscurator
+{
+	background-color:white;
+	position:fixed;
+	top:0px;
+	left:0px;
+}
+
+#innerContainer
+{
+	position: relative;
+	border: 0px;
+	width: 100%;
+	height: 100%;
+	/*
+	background-image:url('imgs/nero05perc.png');
+	background-repeat:repeat;
+	*/
+	
+}
+
+
+
+.liveLogo
+{
+	width: 110px;
+	height: 60px;
+	border: 0;
+	padding: 0px;
+	margin: 0px;
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	font-size: 24px;
+	letter-spacing: -2px;
+	text-shadow: none;
+	z-index: 70;
+	/* uncomment this to use an image and hide text */
+	color: transparent;
+	background-color: transparent;
+	background-image:url('imgs/logo_horiz.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	/*
+	border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px;	
+	*/
+}
+.liveLogo:hover
+{
+	/* color: transparent;
+	background-image:none; */
+	background-color: #F1AD02;	
+}
+.liveLogoIframe
+{
+	width: 60px;
+	height: 45px;
+	padding:5px;
+	background-image:url('imgs/icon_core_filter_40x30.png');
+}
+
+#ticker,
+#tickerTv
+{
+	background-image:url('imgs/nero50perc.png');
+	background-repeat:repeat;
+	border: 0;
+	padding: 0px;
+	margin: 0px;
+	display: block;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 10px;
+	height: 10px;
+	z-index: 40;
+}
+#tickerTv
+{
+	background-image:url('imgs/bianco50perc.png');
+}
+
+
+#liveBusyIconContainer
+{
+	background-image:url('imgs/nero75perc.png');
+	background-repeat:repeat;
+	background-color: transparent;
+	border: 0;
+	padding: 0px;
+	margin: 0px;
+	display: block;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 70;
+}
+
+/*
+#liveBusyIconContainer
+{
+	background-color: transparent;
+	border: 0;
+	padding: 0px;
+	margin: 0px;
+	display: block;
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	width: 50;
+	height: 50;
+	z-index: 70;
+}
+*/
+
+#liveBusyIcon
+{
+	background-image:url('imgs/busy.svg');
+	background-size: 50px 50px;
+	background-repeat:no-repeat;
+	background-position:20px 20px;
+	background-color: transparent;
+	width: 100px;
+	height: 100px;
+	z-index: 70;
+}
+
+#livePanel,
+#livePanelTv
+{
+	background-image:url('imgs/bianco85perc.png');
+	background-repeat:repeat;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	padding: 0px;
+	margin: 0px;
+	width: 450px;
+	z-index: 60;
+	
+}
+#livePanelTv
+{
+	background-image:url('imgs/nero75perc.png');
+	text-shadow: none;
+	color: #aaaaaa;
+	width: 100%;
+	height: 77px; /* questa viene poi assegnata programmaticamente */
+}
+
+#liveButtonAdd,
+#liveButtonDel,
+#liveButtonPause,
+#liveButtonPauseTv,
+#liveButtonPlay,
+#liveButtonPlayTv,
+#liveButtonExitTv,
+#liveButtonSettings,
+#liveButtonInfo
+{
+	width: 50px;
+	height: 50px;
+	padding: 0px;
+	margin: 0px;
+	cursor: pointer;
+}
+#liveButtonPauseTv,
+#liveButtonPlayTv,
+#liveButtonExitTv,
+#liveButtonSettings,
+#liveButtonInfo
+{
+	position: relative;
+	background-image: url('imgs/icon_media_pause_29x45.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	float:left;
+}
+#liveButtonPlayTv
+{
+	background-image: url('imgs/icon_arrow_e_50x50_big.png');
+}
+#liveButtonExitTv
+{
+	background-image: url('imgs/icon_core_exit_45x45.png');
+	border-left: 2px solid rgba(255,255,255,0.1);
+}
+#liveButtonSettings
+{
+	background-image: url('imgs/icon_gear_50x50.png');
+}
+#liveButtonInfo
+{
+	background-image: url('imgs/icon_info_50x50.png');
+}
+
+
+#liveButtonAdd:hover,
+#liveButtonDel:hover,
+#liveButtonPause:hover,
+#liveButtonPlay:hover,
+#liveButtonPauseTv:hover,
+#liveButtonPlayTv:hover,
+#liveButtonExitTv:hover,
+#liveButtonSettings:hover,
+#liveButtonInfo:hover
+{
+	background-color: #F1AD02;	
+}
+
+#liveButtonPause
+{
+	width: 29px;
+	height: 45px;
+	padding-left: 10px;
+	padding-right: 11px;
+	padding-top: 3px;
+	padding-bottom: 2px;
+}
+
+#liveTimerTv
+{
+	font-weight: bold;
+	letter-spacing: -2px;
+	position: relative;
+	float:left;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-left: 2px solid rgba(255,255,255,0.1);
+	margin-left: 5px;
+}
+#liveTimerTvTot
+{
+	padding-left: 5px;
+}
+
+#refreshSlider
+{
+	letter-spacing: -1px;
+	position: absolute;
+	bottom: 20px;
+	right: 80px;
+	width: 160px;
+}
+#speedSliderTv
+{
+	letter-spacing: -1px;
+	position: relative;
+	float:left;
+	width: 160px;
+	margin-right: 10px;
+}
+#refreshLabel
+{
+	position: absolute;
+	bottom: 20px;
+	right: 0px;
+	width: 50px;
+	letter-spacing: -1px;
+}
+#speedLabelTv
+{
+	width: 50px;
+	letter-spacing: -1px;
+}
+#refreshSlider .ui-slider-handle,
+#speedSliderTv .ui-slider-handle
+{
+	height: 12px;
+}
+
+#liveTitleTv
+{
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 17px;
+	position: relative;
+	float:left;
+	width: 200px;
+	overflow: hidden;
+	cursor:pointer;
+	padding-left: 60px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 6px;
+	/* border-left: 2px solid rgba(255,255,255,0.1); */
+	background-image: url('imgs/icon_core_get_50x50.png');
+	background-repeat: no-repeat;
+	background-position:left center;
+}
+#liveTitleTv:hover
+{
+	background-color: #F1AD02;	
+	color: white;
+}
+
+#livePopup
+{
+	background-color: #F1AD02;
+	font-size: 14px;
+	border: 0;
+	padding: 10px;
+	margin: 3px;
+	max-width: 30%;
+	display: block;
+	position: absolute;
+	overflow: hidden;
+	z-index: 20;
+}
+
+#spiralLine
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	/*
+	background-image:url('imgs/nero15perc.png');
+	background-repeat:repeat;
+	*/
+	z-index: 1;
+}
+
+#spiralLineThumb
+{
+	width: 10%;
+	height: 10%;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	padding: 0px;
+	background-color: white;
+	/*
+	background-image:url('imgs/bianco90perc.png');
+	background-repeat:repeat;
+	*/
+	border: 6px solid white;
+	z-index: 15;
+}
+
+#tvContainer,
+#tvInnerContainer,
+#tvBackgroundContainer,
+#tvForegroundContainer
+{
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0px;
+	left:0px;
+	z-index: 50;
+	padding: 0px;
+	margin: 0px;
+	display: none;
+	overflow:hidden;
+}
+
+#tvInnerContainer,
+#tvBackgroundContainer,
+#tvForegroundContainer
+{
+	background-color: transparent;
+	display: block;
+	overflow: hidden;
+}
+#tvBackgroundContainer
+{
+	z-index: 10;
+}
+#tvForegroundContainer
+{
+	z-index: 20;
+}
+
+
+#timeline
+{
+	position: absolute;
+	/* 
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 20px; */
+	margin: 0px;
+	padding: 0px;
+	letter-spacing: -1px;
+	
+}
+#timelineButtonPrev,
+#timelineButtonNext,
+#timelineButtonPrevPost,
+#timelineButtonNextPost
+{
+	position: relative;
+	float:left;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+#timelineButtonPrev
+{
+	background-image: url('imgs/icon_pagination_prev10pages_50x30.png');
+}
+#timelineButtonNext
+{
+	background-image: url('imgs/icon_pagination_next10pages_50x30.png');
+}
+#timelineButtonPrevPost
+{
+	background-image: url('imgs/icon_pagination_last_50x30.png');
+}
+#timelineButtonNextPost
+{
+	background-image: url('imgs/icon_pagination_first_50x30.png');
+}
+#timelineButtonPrev:hover,
+#timelineButtonNext:hover,
+#timelineButtonPrevPost:hover,
+#timelineButtonNextPost:hover
+{
+	background-color: #F1AD02;	
+}
+#timelineSelector
+{
+	display: none;
+	position: absolute;
+	background-color: #F1AD02;
+}
+#timelineSelectorLabel
+{
+	display: none;
+	position: absolute;
+	width:50px;
+	font-size:14px;
+	font-weight:bold;
+	padding: 3px;
+	color: #F1AD02;
+	text-align: center;
+	background-image:url('imgs/nero66perc.png');
+	background-repeat:repeat;
+}
+#timelineAreahit
+{
+	position: absolute;
+	cursor:pointer;
+}
+.livePopupTv
+{
+	display: none;
+	position: absolute;
+	background-image:url('imgs/bianco95perc.png');
+	background-repeat:repeat;
+	color: #333;
+	-moz-box-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
+	-webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
+}
+#contentForRobots
+{
+	width:0px;
+	height:0px;
+	overflow:hidden;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+
+.liveElement
+{
+	position: absolute;
+	border: 6px solid #E4E4E4;
+	background-color: #E4E4E4;
+	margin: 3px;
+	margin-top: 24px;
+	/* margin-bottom: 15px; */
+	margin-bottom: 6px;
+	cursor: pointer;
+	display: block;
+	min-width: 100px;
+	/* questi due ora sono gestiti dinamicamente
+	max-width: 30%;
+	max-height: 30%;
+	*/
+	color: #333;
+	text-shadow: rgba(255,255,255, 0.8) 0px 1px 0px;
+	/*
+	background-image:url('imgs/nero10perc.png');
+	background-repeat:repeat;
+	*/
+	z-index: 10;
+}
+
+
+
+.liveElement:hover,
+.liveElementSelected
+{
+	/*
+	background-image:url('imgs/nero20perc.png');
+	background-repeat:repeat;
+	*/
+	border: 6px solid #bbb;
+	background-color: #bbb;
+}
+
+.liveElement > *
+{
+	overflow: hidden;
+}
+
+.elementTitle,
+.elementContentNum
+{
+	position: absolute;
+	padding: 2px;
+	padding-bottom: 0px;
+	color: #999999;
+	overflow: hidden;
+}
+
+.elementTitle
+{
+	top: -24px;
+	height: 16px;
+	left: 0px;
+	padding-left: 0px;
+	color: black;
+	background-color: transparent;
+	line-height: 16px; /* così va a capo dietro lo slot*/
+	letter-spacing: 0px;
+	overflow: hidden;
+}
+
+.elementContentNum
+{
+	top: -23px;
+	height: 12px;
+	right: 0px;
+	padding-top: 5px;
+	padding-left: 4px;
+	padding-right: 0px;
+	background-color: transparent;
+	line-height: 12px;
+	letter-spacing: 0px;
+	overflow: hidden;
+}
+
+
+.elementProgress
+{
+	position: absolute;
+	/*bottom: -15px;*/
+	bottom: -9px;
+	right: -6px;
+	/* height: 12px; */
+	height: 3px;
+	padding: 0px;
+	margin: 0px;
+	background-color: white;
+}
+
+.liveElement img,
+.liveElement p,
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+.liveElement p
+{
+	display: block;
+}
+
+.postCategories
+{
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+
+/* nota: i link nei contenuti hanno sempre ombra nera, perchè sono gialli chiari, indipendentemente dall'avgBrightness */
+.genericLink
+{
+	display: inline;
+	color: #F1AD02;
+	text-shadow: rgb(0, 0, 0) 0px 0px 10px;
+}
+
+.genericLink:hover
+{
+	color: #F1C556;
+	text-shadow: rgb(0, 0, 0) 0px 0px 10px;
+}
+
